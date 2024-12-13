@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  
+
+
+  body{
+    background-color: hsl(0, 0%, 0%);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+       /* 3. Add accessible line-height */
+       line-height: 1.5;
+       /* 4. Improve text rendering */
+       -webkit-font-smoothing: antialiased;
+       max-width: 100%;
+      /* Prevent horizontal scrolling */
+ 
+   
+
+    
+  }
+
+  section{
+    max-width: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+    gap: 1rem;
+    
+
+  }
+
+  .right-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  form{
+    border: 1px solid hsl(0, 0%, 21%);
+  }
+ 
+
+  .img-gallery{
+    position: relative;
+   height: 550px;
+   width: 260px;
+   background-image: url(images/screenshot3\ -\ Copie\ \(3\).png);
+   background-repeat: no-repeat;
+   animation: change 10s infinite ease-in-out;
+   border:  8px solid hsl(0, 0%, 21%);
+   border-radius: 34px;
+   
+   
+  }
+
+
+  .left-image{
+    position:absolute;
+    left: -70px;
+    top: -10px;
+    z-index: -1;
+  }
+
+  .left-image img{
+    border: 8px solid hsl(0, 0%, 21%);
+    border-radius: 34px;
+    
+  }
+
+
+
+  
+  
+
+  
+
+  
+ 
+
+
+ 
+
+  
+
+  .logo img{
+    width: 175px;
+    margin: auto;
+    
+    
+  }
+  .input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+  }
+
+  .input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+  }
+  .input-container p{
+    position: absolute;
+    right: 35px;
+    color: white;
+  }
+
+  input{
+    width: 85%;
+    padding: 6px;
+    background-color: hsl(0, 0%, 7%);
+    border: 1px solid hsl(0, 0%, 25%);
+    font-size: 15px;
+    border-radius: 5px;
+    color: white;
+   
+    
+    
+  }
+
+  #masquer{
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  #masquer:hover{
+    color: hsl(0, 0%, 49%);
+  }
+
+
+  input::placeholder{
+    color: hsl(60, 5%, 64%);
+    font-size: 13px;
+    transition: 0.15s all ease;
+    
+  
+    
+  }
+
+  input:focus::placeholder{
+    transform: translate(5px, -8px);
+    font-size: 11px;
+  }
+  
+
+  .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+ 
+
+  .btn button{
+    background-color: hsl(214, 89%, 52%);
+    width: 85%;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    
+    
+    
+  }
+
+  .btn button:hover{
+    background-color: hsl(214, 89%, 42%);
+
+  }
+
+  .link-connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 10px;
+  }
+
+  .link-connect a{
+    text-decoration: none;
+    color: white;
+
+  }
+
+  .fcb{
+    display: flex;
+    gap: 10px;
+  }
+
+  .fcb a{
+    color: hsl(204, 100%, 48%);
+  }
+
+  .fcb a:hover{
+    color: white;
+  }
+
+  .fcb img{
+    width: 20px;
+    height: 20px;
+    margin: auto;
+  }
+
+
+  .inscrivez-vous-container{
+    width: 100%;
+    border: 1px solid hsl(0, 0%, 21%);
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
+    
+    
+  }
+
+  .inscrivez-vous-container p{
+    color: white;
+  }
+  .inscrivez-vous-container a{
+    text-decoration: none;
+    color: hsl(204, 100%, 48%);
+  }
+
+  .download-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    
+    
+  }
+
+  .link-to-download{
+    display: flex;
+  }
+
+.link-to-download a img{
+  width: 150px;
+}
+
+.img-microsoft{
+  margin-top: 9px;
+}
+
+.toggle{
+  color: aliceblue;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+.rows-links{
+  max-width: 100%;
+  height: 10vh;
+  
+
+}
+
+.rows-links {
+  max-width: 100%;
+  overflow: hidden; /* Prevent overflow from exceeding container bounds */
+}
+
+.links-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  font-size: 12px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.links-row a:hover {
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  gap: 10px;
+  justify-content: center; /* Center items horizontally */
+  width: 100%;
+  overflow-wrap: anywhere; /* Prevent long text from overflowing */
+}
+
+.row2 {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  gap: 10px;
+  justify-content: center; /* Center items horizontally */
+  width: 100%;
+}
+
+.row a {
+  text-decoration: none;
+  color: hsl(0, 0%, 66%);
+  white-space: nowrap; /* Prevent excessive wrapping for small words */
+}
+
+.row2 a {
+  text-decoration: none;
+  color: hsl(0, 0%, 66%);
+}
+
+.row select {
+  flex-shrink: 0; /* Prevent select box from shrinking */
+}
+
+
+select{
+  background-color: black;
+  border:none;
+  color: hsl(0, 0%, 66%); 
+  cursor: pointer;
+}
+
+
+
+@keyframes change{
+  0%
+  {
+    background-image: url(images/screenshot3\ -\ Copie\ \(3\).png);
+
+  }
+  40%
+  {
+    background-image: url(images/screenshot1.png);
+  }
+  70%
+  {
+    background-image: url(images/screenshot2.png);
+  }
+  100%
+  {
+    background-image: url(images/screenshot4.png);
+  }
+ 
+}
+
+
+@media (max-width: 885px) {
+  .img-gallery {
+    display: none;
+  }
+
+}
+
+@media (max-width: 450px) {
+ .right-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+  }
+  form{
+    border: none;
+  }
+  input{
+    width: 75%;
+  }
+  .btn button{
+    width: 75%;
+  }
+  .inscrivez-vous-container{
+    border: none;
+  }
+
+  
+
+  
+}
+
+
+  

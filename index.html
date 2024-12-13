@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css">
+        
+</head>
+<body>
+<section>
+  
+  
+<div class="img-gallery">
+  <div class="left-image">
+    <img src="images/screenshot3 - Copie (3).png" alt="">
+  </div>
+
+  </div>
+</div>
+
+
+
+<div class="right-container">
+<form action="">
+
+  <div class="logo">
+    <img src="images/369819.svg" alt="Logo">
+  </div>
+
+
+   <div class="input">
+  <div class="input-container">
+    <input type="text" name="" id="inp1" placeholder="Num,téléphone,nom de profil ou e-mail" required>
+  </div>
+  <div class="input-container">
+    <input type="text" name="" id="password" placeholder="Mot de passe" required>
+    <p id="masquer">Masquer</p>
+  </div>
+</div>
+  <div class="btn">
+    <button id="btnj">Se connecter</button>
+  </div>
+
+
+   
+  <div class="link-connect">
+    <div class="fcb">
+        <img src="images/facebook (1).png" alt="facebook icon">
+    <a href="" id="connect">Se connceter avec facebbok</a>
+</div>
+    <a href="" id="mdp">Mot de passe oublié ?</a>
+  </div>
+
+
+
+
+
+
+</form>
+
+
+<div class="inscrivez-vous-container">
+  <p id="p">Vous n’avez pas de compte ?</p>
+  <a href="" id="inscrit">Inscrivez-vous</a>
+</div>
+
+<div class="download-container">
+  <p id="telechargez">Télechargez l'application.</p>
+  <div class="link-to-download">
+    <a href=""><img src="images/GooglePlay.png" alt="googleplay"></a>
+    <a href="" class="img-microsoft"><img  src="images/Get_it_from_Microsoft_Badge.png" alt="microsoft" height="39px"></a>
+  </div>
+</div>
+
+
+</div>
+
+
+
+</section>
+
+
+<section class="rows-links">
+  <div class="links-row">
+    <div class="row">
+      <a href="" id="a1">Meta</a>
+      <a href="" id="a2">À propos</a>
+      <a href="" id="a3">Blog</a>
+      <a href="" id="a4">Emplois</a>
+      <a href="" id="a5">Aide</a>
+      <a href="" id="a6">API</a>
+      <a href="" id="a7">Confidentialite</a>
+      <a href="" id="a8">Conditions</a>
+      <a href="" id="a9">Lieux</a>
+      <a href="" id="a10">Instgram Lite</a>
+      <a href="" id="a11">Threads</a>
+      <a href="" id="a12">Importation des contacts et non-utilisateurs</a>
+      <a href="" id="a13">Meta Verified</a>
+    </div>
+    <div class="row2">
+      <select id="" name="">
+        <option value="fre">Francais</option>
+        <option value="eng">English</option>
+      </select>
+      <a href="" id="a14">© 2024 Instagram par Meta</a>
+    </div>
+  </div>
+</section>
+
+
+
+<script>
+  
+    let password = document.getElementById("password");
+    let Masquer = document.getElementById("masquer");
+  
+    Masquer.style.visibility = "hidden";
+  
+    password.addEventListener("input", function () {
+      if (password.value.length > 0) {
+        Masquer.style.visibility = "visible";
+      } else {
+        Masquer.style.visibility = "hidden";
+      }
+    });
+  
+    Masquer.onclick = function () {
+      if (password.type === "password") {
+        password.type = "text";
+        Masquer.innerText = "Masquer";
+      } else {
+        password.type = "password";
+        Masquer.innerText = "Afficher";
+      }
+    };
+ 
+  
+
+</script>
+
+</body>
+<script src="translate.js"></script>
+
+
+</html>
